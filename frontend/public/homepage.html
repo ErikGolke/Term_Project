@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <link rel="stylesheet" href="./css/homepage.css">
+    <script src="js/homepage.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <form action="" method="" id="form">
+            <h4>New Quote</h4>
+            <input type="text" id="quote" placeholder="Quote"/>
+            <textarea id="quoteUpdate" name="quoteUpdate" rows="4" cols="50" placeholder="Update Quote" style="display:none"></textarea>
+            <h4>Get Random For Any UserButton</h4>
+            <button type="button" onclick="getAnyQuote()">Get Quote</button>
+            <h4>Get Random For User Button</h4>
+            <button type="button" onclick="getQuote()">Get Quote</button>
+
+            <h4>Submit Button</h4>
+            <button type="button" onclick="sendQuote()">Submit Quote</button>
+            <h4>Delete Button</h4>
+            <button type="button" onclick="deleteAllQuote()">Delete All Quotes</button>
+            <button type="button" onclick="deleteQuote()">Delete Quote</button>
+            <h4>Show/Hide update text areas</h4>
+            <button type="button" id="quoteFieldButton" onclick="showupdateQuote()">Show update Quote</button>
+            <h4>Update Button</h4>
+            <button type="button" onclick="updateQuote()">Update Quote</button>
+            <h5>Change Email</h5>
+            <input type="email" id="email" placeholder="New Email"/>
+            <button type="button" onclick="updateEmail()">Update Email</button>
+        </form>
+    </div>
+</body>
+
+<a href="metrics.html">METRICS</a>
+<a href="documentation.html">documentation</a>
+</html>
